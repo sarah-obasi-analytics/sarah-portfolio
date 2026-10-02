@@ -1,12 +1,8 @@
 @import "tailwindcss";
 
-@custom-variant dark (&:where(.dark, .dark *));
-
 @theme {
   --color-charcoal-bg: #121212;
   --color-charcoal-card: #1e1e1e;
-  --color-light-bg: #ffffff;
-  --color-light-text: #1a1a1a;
   --color-muted-rose: #d6a1a1;
   --color-soft-blush: #e5c3c3;
   --color-off-white: #e0e0e0;
@@ -18,9 +14,6 @@
     @apply scroll-smooth;
   }
   body {
-    @apply bg-light-bg text-light-text transition-colors duration-300;
-  }
-  .dark body {
     @apply bg-charcoal-bg text-off-white;
   }
 }

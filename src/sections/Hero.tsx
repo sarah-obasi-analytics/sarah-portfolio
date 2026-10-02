@@ -30,6 +30,10 @@ const Hero = () => {
     }, 3000);
   };
 
+  const handleViewWork = () => {
+    document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   const handleDownloadCV = () => {
     const link = document.createElement('a');
     link.href = '/OBASI_SARAH_CV.docx';
@@ -61,7 +65,7 @@ const Hero = () => {
           <motion.span variants={item} className="text-off-white/70 font-medium tracking-widest text-lg block mt-2">{portfolioData.personalInfo.title}</motion.span>
           <motion.p variants={item} className="mt-8 text-xl text-text-muted max-w-lg italic">"Turning financial and business data into clear insights that support better decisions."</motion.p>
           <motion.div variants={item} className="mt-10 flex gap-4">
-            <motion.button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="bg-muted-rose text-charcoal-bg hover:bg-soft-blush px-8 py-3 rounded font-semibold transition">View My Work</motion.button>
+            <motion.button onClick={handleViewWork} whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="bg-muted-rose text-charcoal-bg hover:bg-soft-blush px-8 py-3 rounded font-semibold transition">View My Work</motion.button>
             <motion.button onClick={handleDownloadCV} whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="border border-muted-rose text-muted-rose hover:bg-muted-rose/10 px-8 py-3 rounded font-semibold transition">Download My CV</motion.button>
           </motion.div>
         </div>

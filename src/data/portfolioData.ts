@@ -1,3 +1,5 @@
+import heroImage from '../assets/hero.png';
+
 export interface Project {
   id: string;
   title: string;
@@ -38,8 +40,8 @@ export interface Project {
   }[];
   liveUrl: string;
   githubUrl: string;
-  problem?: string;
-  outcome?: string;
+  problem: string;
+  outcome: string;
 }
 
 export const portfolioData = {
@@ -78,33 +80,68 @@ export const portfolioData = {
       id: "business-income-expense-tracker",
       title: "Business Income & Expense Tracker",
       category: "Excel / Financial Analysis",
-      overview: "An Excel-based financial tracker developed for a small lipcare business to help the business owner monitor financial performance more effectively.",
+      overview: "An Excel-based financial tracker developed for a small lipcare business to help the business owner monitor income, expenses, and profitability without relying on scattered records.\n\nThe tracker centralizes every transaction and turns it into a clear, at-a-glance view of financial health.",
       shortDescription: "An Excel-based financial tracker developed for a small lipcare business to help the business owner monitor financial performance more effectively.",
-      featuredImage: "/assets/hero.png", // Using a placeholder for now
+      featuredImage: heroImage,
       tools: ["Microsoft Excel"],
-      objectives: [],
-      businessQuestions: [],
-      process: [],
-      dashboardSections: [],
-      insights: [],
-      recommendations: [],
-      lessonsLearned: [],
-      gallery: [],
+      objectives: [
+        "Centralize income and expense records in one structured workbook.",
+        "Automatically calculate profit and monthly totals.",
+        "Give the business owner a simple, repeatable way to log transactions.",
+        "Visualize monthly performance trends at a glance."
+      ],
+      businessQuestions: [
+        {
+          category: "INCOME & EXPENSES",
+          questions: [
+            "How much income and expense was recorded each month?",
+            "What are the biggest cost categories?",
+            "Is spending staying within a sustainable range?"
+          ]
+        },
+        {
+          category: "PROFITABILITY",
+          questions: [
+            "What is the net profit for each period?",
+            "Which months were most and least profitable?",
+            "Is profit trending upward or downward over time?"
+          ]
+        }
+      ],
+      process: [
+        { number: "01", title: "Requirements Gathering", description: "Understood how the business owner tracked transactions and what she needed to see." },
+        { number: "02", title: "Structuring the Workbook", description: "Built income and expense entry sections with consistent, easy-to-use categories." },
+        { number: "03", title: "Formula Design", description: "Set up formulas to calculate profit and monthly totals automatically." },
+        { number: "04", title: "Visualization", description: "Added charts so performance trends are visible at a glance." }
+      ],
+      dashboardSections: [
+        { title: "Monthly Income & Expense Log", description: "A structured entry sheet where every transaction is recorded under consistent categories, making it easy to keep records current." },
+        { title: "Profit Summary", description: "Automatically calculated monthly profit, so the business owner always knows where she stands without manual math." },
+        { title: "Performance Charts", description: "Simple charts visualizing income, expenses, and profit trends across months." }
+      ],
+      insights: [
+        { title: "Manual tracking was hiding real profitability.", description: "Before the tracker, transactions were scattered across notebooks and chat messages, making it hard to see true profit.", implication: "A single structured record made month-to-month performance visible for the first time." },
+        { title: "Certain months carried disproportionately high expenses.", description: "Once categorized, cost spikes in specific months became easy to spot.", implication: "The owner can plan ahead for recurring high-cost periods." }
+      ],
+      recommendations: [
+        { title: "Review the tracker monthly", description: "Set a recurring monthly check-in to log transactions and review profit trends." },
+        { title: "Flag high-cost categories early", description: "Use the expense breakdown to catch rising costs before they affect profit." },
+        { title: "Expand tracking as the business grows", description: "Add new categories or a simple inventory sheet if product lines increase." }
+      ],
+      lessonsLearned: [
+        "Translating a non-technical business owner's needs into a usable spreadsheet",
+        "Structuring data entry for consistency and ease of use",
+        "Formula design for automated calculations",
+        "Designing for a real, non-analyst end user",
+        "Basic financial reporting and chart design"
+      ],
+      gallery: [
+        { src: heroImage, alt: "Business Income & Expense Tracker", caption: "Income & Expense Tracker overview" }
+      ],
       liveUrl: "",
       githubUrl: "",
       problem: "The business needed a simple way to keep track of income, expenses, profit, and monthly financial performance without relying on scattered records.",
-      solution: "I built a structured Excel tracker that allowed the business owner to record transactions and monitor key financial information.",
-      workPerformed: [
-        "Structured the financial data",
-        "Created income and expense tracking sections",
-        "Calculated profit",
-        "Organized monthly financial information",
-        "Created charts to visualize performance",
-        "Designed the tracker to be simple and practical for regular use"
-      ],
-      outcome: "The tracker provided a centralized way for the business owner to monitor income, expenses, and profitability and gain a clearer understanding of the business's financial performance.",
-      projectLink: null,
-      githubLink: null
+      outcome: "The tracker provided a centralized way for the business owner to monitor income, expenses, and profitability and gain a clearer understanding of the business's financial performance."
     },
     {
       id: "sales-performance-analysis",
@@ -194,9 +231,11 @@ export const portfolioData = {
         { src: "/sales-performance-dashboard.png", alt: "Sales Performance Dashboard", caption: "Sales Performance Dashboard" }
       ],
       liveUrl: "",
-      githubUrl: ""
+      githubUrl: "",
+      problem: "Raw sales data was sitting unused, giving management no clear view of which customers, products, or regions were actually driving revenue.",
+      outcome: "An interactive dashboard that surfaces top customers, product-line performance, and regional trends at a glance, turning raw sales records into decisions management can act on."
     }
-  ],
+  ] as Project[],
   socialLinks: {
     linkedin: "https://www.linkedin.com/in/sarah-obasi-49a0233a8",
     email: "obasisarah001@gmail.com",
