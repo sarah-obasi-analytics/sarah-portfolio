@@ -36,7 +36,7 @@ const Hero = () => {
 
   const handleDownloadCV = () => {
     const link = document.createElement('a');
-    link.href = '/OBASI_SARAH_CV.docx';
+    link.href = `${import.meta.env.BASE_URL}OBASI_SARAH_CV.docx`;
     link.download = 'OBASI_SARAH_CV.docx';
     document.body.appendChild(link);
     link.click();

@@ -1,4 +1,5 @@
 import heroImage from '../assets/hero.png';
+import salesDashboardImage from '../assets/sales-performance-dashboard.png';
 
 export interface Project {
   id: string;
@@ -149,7 +150,7 @@ export const portfolioData = {
       category: "Data Analysis & Business Intelligence",
       shortDescription: "An interactive Excel dashboard that transforms sales data into insights across customers, product lines, and geographical markets.",
       overview: "I developed an interactive Sales Data Dashboard in Microsoft Excel to transform raw sales data into meaningful visual insights that can support business decision-making.\n\nThe dashboard provides a high-level view of sales revenue performance and allows users to quickly identify top customers, high-performing product lines, and regions with strong or weak sales performance.",
-      featuredImage: "/sales-performance-dashboard.png",
+      featuredImage: salesDashboardImage,
       tools: ["Microsoft Excel", "Pivot Tables", "Pivot Charts", "Data Analysis"],
       objectives: [
         "Analyze overall sales revenue.",
@@ -228,7 +229,7 @@ export const portfolioData = {
         "Translating analysis into business recommendations"
       ],
       gallery: [
-        { src: "/sales-performance-dashboard.png", alt: "Sales Performance Dashboard", caption: "Sales Performance Dashboard" }
+        { src: salesDashboardImage, alt: "Sales Performance Dashboard", caption: "Sales Performance Dashboard" }
       ],
       liveUrl: "",
       githubUrl: "",
