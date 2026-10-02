@@ -17,23 +17,23 @@ const About = () => {
         <div className="bg-charcoal-card p-8 rounded border border-white/5">
             <h4 className="font-medium text-off-white text-xl mb-6">Profile Snapshot</h4>
             <div className="space-y-4 text-text-muted">
-                <div className="flex justify-between border-b border-white/10 pb-3">
+                <div className="flex flex-wrap justify-between gap-x-4 gap-y-1 border-b border-white/10 pb-3">
                     <span className="text-sm">Role</span>
-                    <span className="font-medium text-off-white">Finance Data Analyst</span>
+                    <span className="font-medium text-off-white text-right">Finance Data Analyst</span>
                 </div>
-                <div className="flex justify-between border-b border-white/10 pb-3">
+                <div className="flex flex-wrap justify-between gap-x-4 gap-y-1 border-b border-white/10 pb-3">
                     <span className="text-sm">Position</span>
-                    <span className="font-medium text-off-white">Jr. Accountant Executive</span>
+                    <span className="font-medium text-off-white text-right">Jr. Accountant Executive</span>
                 </div>
-                <div className="flex justify-between border-b border-white/10 pb-3">
+                <div className="flex flex-wrap justify-between gap-x-4 gap-y-1 border-b border-white/10 pb-3">
                     <span className="text-sm">Experience</span>
-                    <span className="font-medium text-off-white">2+ Years</span>
+                    <span className="font-medium text-off-white text-right">2+ Years</span>
                 </div>
-                <div className="flex justify-between border-b border-white/10 pb-3">
+                <div className="flex flex-wrap justify-between gap-x-4 gap-y-1 border-b border-white/10 pb-3">
                     <span className="text-sm">Education</span>
-                    <span className="font-medium text-off-white">B.Sc. Economics (2:1)</span>
+                    <span className="font-medium text-off-white text-right">B.Sc. Economics (2:1)</span>
                 </div>
-                <div className="flex justify-between border-b border-white/10 pb-3">
+                <div className="flex flex-wrap justify-between gap-x-4 gap-y-1 border-b border-white/10 pb-3">
                     <span className="text-sm">Core Focus</span>
                     <span className="font-medium text-off-white text-right">Finance • Data Analytics • BI</span>
                 </div>

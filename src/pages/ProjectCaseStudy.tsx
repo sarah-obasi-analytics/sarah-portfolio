@@ -32,7 +32,7 @@ const ProjectCaseStudy = () => {
           {project.shortDescription}
         </motion.p>
         <motion.div initial={{ opacity: 0, scale: 0.95 }} animate={{ opacity: 1, scale: 1 }} transition={{ delay: 0.3 }} className="max-w-4xl mx-auto">
-            <img src={project.featuredImage} alt={project.title} className="rounded-2xl border border-white/5 shadow-2xl" />
+            <img src={project.featuredImage} alt={project.title} className="w-full h-auto rounded-2xl border border-white/5 shadow-2xl" />
         </motion.div>
       </section>
 
@@ -102,17 +102,17 @@ const ProjectCaseStudy = () => {
       {/* CTA */}
       <section className="px-6 py-20 bg-charcoal-card border-t border-white/5 text-center">
         <h2 className="text-3xl font-light mb-8">Want to explore the full project?</h2>
-        <div className="flex justify-center gap-4">
+        <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
             {project.liveUrl ? (
-                <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="bg-muted-rose text-charcoal-bg px-8 py-3 rounded font-medium hover:bg-white transition flex items-center">
+                <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto bg-muted-rose text-charcoal-bg px-8 py-3 rounded font-medium hover:bg-white transition flex items-center justify-center">
                     View Project <ExternalLink className="ml-2" size={18} />
                 </a>
             ) : (
-                <button disabled className="bg-charcoal-bg text-text-muted px-8 py-3 rounded font-medium cursor-not-allowed">
+                <button disabled className="w-full sm:w-auto bg-charcoal-bg text-text-muted px-8 py-3 rounded font-medium cursor-not-allowed">
                     Project link coming soon
                 </button>
             )}
-            <Link to="/" className="bg-charcoal-bg text-off-white px-8 py-3 rounded font-medium hover:bg-white/10 transition">
+            <Link to="/" className="w-full sm:w-auto text-center bg-charcoal-bg text-off-white px-8 py-3 rounded font-medium hover:bg-white/10 transition">
                 Back to Projects
             </Link>
         </div>

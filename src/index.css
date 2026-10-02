@@ -11,9 +11,9 @@
 
 @layer base {
   html {
-    @apply scroll-smooth;
+    @apply scroll-smooth overflow-x-hidden;
   }
   body {
-    @apply bg-charcoal-bg text-off-white;
+    @apply bg-charcoal-bg text-off-white overflow-x-hidden;
   }
 }

@@ -65,19 +65,19 @@ const Projects = () => {
                 </div>
               </div>
               
-              <div className="flex gap-4 mt-12">
+              <div className="flex flex-col sm:flex-row gap-4 mt-12">
                 <Link
                   to={`/projects/${project.id}`}
-                  className="inline-block bg-charcoal-bg text-off-white px-6 py-3 rounded border border-muted-rose hover:bg-muted-rose hover:text-charcoal-bg transition font-medium hover:-translate-y-1"
+                  className="text-center bg-charcoal-bg text-off-white px-6 py-3 rounded border border-muted-rose hover:bg-muted-rose hover:text-charcoal-bg transition font-medium hover:-translate-y-1"
                 >
                   See Case Study
                 </Link>
                 {project.liveUrl && (
-                  <a 
-                    href={project.liveUrl} 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
-                    className="inline-block bg-charcoal-bg text-off-white px-6 py-3 rounded border border-muted-rose hover:bg-muted-rose hover:text-charcoal-bg transition font-medium hover:-translate-y-1"
+                  <a
+                    href={project.liveUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-center bg-charcoal-bg text-off-white px-6 py-3 rounded border border-muted-rose hover:bg-muted-rose hover:text-charcoal-bg transition font-medium hover:-translate-y-1"
                   >
                     View Project
                   </a>
